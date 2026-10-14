@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffb6c1, #ffe4e9, #ffccd5);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 100%;
+            max-width: 550px;
+            padding: 40px 30px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(200, 50, 80, 0.2);
+            border: 3px solid #ff8fa3;
+        }
+
+        .heart {
+            font-size: 65px;
+            margin-bottom: 15px;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        h1 {
+            color: #e63959;
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: #ff6b81;
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+
+        .message {
+            background: #fff0f3;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        .message p {
+            color: #9d174d;
+            font-size: 16px;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+
+        button {
+            background: #e63959;
+            color: white;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #c9184a;
+            transform: scale(1.05);
+        }
+
+        #surprise {
+            display: none;
+            color: #e63959;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 25px;
+            color: #ff6b81;
+            font-size: 14px;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.15);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="heart">❤️</div>
+
+        <h1>Happy Valentine's Day!</h1>
+
+        <p class="subtitle">A little message from the heart 💌</p>
+
+        <div class="message">
+            <p>You make my world brighter every day.</p>
+            <p>Your smile is my favorite kind of sunshine.</p>
+            <p>Every moment with you becomes a beautiful memory.</p>
+            <p>You make ordinary days feel magical.</p>
+            <p>Happy Valentine's Day to someone who makes life sweeter.</p>
+        </div>
+
+        <button onclick="showSurprise()">Click for a Surprise 💝</button>
+
+        <div id="surprise">
+            💖 You are loved more than words can say! 💖
+        </div>
+
+        <footer>
+            Made with ❤️ and lots of love
+        </footer>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById("surprise").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
